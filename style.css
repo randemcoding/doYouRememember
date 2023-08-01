@@ -34,6 +34,8 @@ body{
     position:relative;
     font-size: 30px;
     font-family: 'Changa One', cursive;
+    color:rgb(223, 132, 211);
+
     font-weight: 100;
 }
 #score-label {
@@ -42,6 +44,7 @@ body{
     font-family: 'Changa One', cursive;
     font-weight: 100;
     margin-top: 10%;
+    color:rgb(223, 132, 211);
 
 }
 #overlay {
