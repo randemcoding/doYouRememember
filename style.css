@@ -1,0 +1,130 @@
+html{
+    --blurred-shadow: 10px 12px 12px rgba(29, 29, 32, 0.9); 
+    --regular-shadow: 10px 12px 12px rgba(29, 29, 32, 0.9);
+    
+}
+body{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Changa One', cursive;
+    height: 98vh;
+    width:98vw;
+    background-color: rgb(110, 36, 180);
+
+}
+#main-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(110, 36, 180);
+    width:98%;
+    height:98vh;
+}
+#text{
+    font-size: 5rem;
+    font-family: 'Changa One', cursive;
+}
+#sentence {
+    font-size: 4rem;
+    font-family: 'Changa One', cursive;
+}
+#score{
+    position:relative;
+    font-size: 30px;
+    font-family: 'Changa One', cursive;
+    font-weight: 100;
+}
+#score-label {
+    position:relative;
+    font-size: 30px;
+    font-family: 'Changa One', cursive;
+    font-weight: 100;
+    margin-top: 10%;
+
+}
+#overlay {
+    display: inline-flex;
+    position: fixed;
+    flex-direction: column;
+    top: 10%;
+    left:10%;
+    z-index: 1;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(0, 162, 255, 0.63);
+    align-items: center;
+}
+#start-button{
+    margin: 2%;
+    font-size: 2rem;
+    font-family: 'Changa One', cursive;
+    background-color: rgba(220, 148, 230, .9);
+    color:rgb(255, 255, 255);
+    text-shadow: 3px 2px 2px rgba(29, 29, 32, 0.9);
+    letter-spacing: .1ch;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 1px rgba(29, 29, 32, 0.9);
+}
+#start-button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px rgba(29, 29, 32, 0.9);
+    transform: translateX(1px);
+}
+#header, #text{
+    font-size: 3rem;
+    color:rgb(255, 255, 255);
+    text-shadow: 10px 12px 2px rgba(29, 29, 32, 0.9);
+    letter-spacing: .1ch;
+}
+#sentence{
+    font-size: 3rem;
+    color:rgb(241, 112, 112);
+    text-shadow: 5px 6px 2px rgba(29, 29, 32, 0.9);
+    letter-spacing: .1ch;
+}
+@keyframes houdini{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+@media screen and (min-width: 350px) and (max-width: 700px){
+    #header{
+        font-size: 1rem;
+    }
+    #text{
+        font-size: 2rem;
+    }
+    #sentence{
+        font-size: 1.5rem;
+    }
+}
+#answer{
+    background-color: rgba(0, 255, 255, 0);
+    border:none;
+    font-size: 2rem;
+    box-shadow: 0 0 0 0px transparent;
+    outline: 1px solid black;
+    text-align: center;
+    color:rgba(148, 227, 230, 0.9);
+    text-shadow: 5px 6px 2px rgba(29, 29, 32, 0.9);
+}
+#answer:focus{
+    background-color: rgba(0, 255, 255, 0);
+    border:none;
+    font-size: 2rem;
+    box-shadow: 0 0 0 0px transparent;
+    outline: none;
+
+}
+#answer::placeholder{
+    color:rgba(220, 148, 230, .4);
+    text-shadow: 0px 0px 0px rgba(29, 29, 32, 0.9);
+}
+#how-to-paragraph{
+    text-align: center;
+}
